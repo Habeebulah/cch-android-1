@@ -1,0 +1,62 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link type="text/css" href="../css/bootstrap.min.css" />
+        <link type="text/css" href="../css/bootstrap-timepicker.min.css" />
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap-timepicker.min.js"></script>
+    </head>
+    <body>
+	
+	<script type="text/javascript">
+		/* Open & initialise our database. Note the required parameters, 
+		   which comprise a short name, a version, a display name 
+		   & expected maximum size (in bytes)
+		*/
+		var db = openDatabase("winkles", "1.0", "Winkles Of The World", 32678);
+
+		/* Create the winkles table (if it doesn't already exist), with 
+		   an automatic id key, plus two columns for name & location
+		*/
+		db.transaction(function(transaction){
+		  transaction.executeSql("CREATE TABLE IF NOT EXISTS winkles (" +
+			"id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT," + 
+			  "winklename TEXT NOT NULL, location TEXT NOT NULL);");
+		});
+</script>
+    </body>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link type="text/css" href="../css/bootstrap.min.css" />
+        <link type="text/css" href="../css/bootstrap-timepicker.min.css" />
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap-timepicker.min.js"></script>
+    </head>
+    <body>
+	
+	<script type="text/javascript">
+		/* Open & initialise our database. Note the required parameters, 
+		   which comprise a short name, a version, a display name 
+		   & expected maximum size (in bytes)
+		*/
+		var db = openDatabase("winkles", "1.0", "Winkles Of The World", 32678);
+
+		/* Create the winkles table (if it doesn't already exist), with 
+		   an automatic id key, plus two columns for name & location
+		*/
+		db.transaction(function(transaction){
+		  transaction.executeSql("CREATE TABLE IF NOT EXISTS winkles (" +
+			"id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT," + 
+			  "winklename TEXT NOT NULL, location TEXT NOT NULL);");
+		});
+</script>
+    </body>
+>>>>>>> f28bf86b6678c05fbed5d2d64aec3cce03516572
+</html>

@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+External Components 
+-------------------
+Bootstrap Datepicker 
+Example: http://runnable.com/UmOlOZbXvZRqAABU/bootstrap-datepicker-example-text-input-with-specifying-date-format2
+Download: http://www.eyecon.ro/bootstrap-datepicker/
+
+Bootstrap Timepicker
+Example: http://jdewit.github.io/bootstrap-timepicker/
+=======
+External Components 
+-------------------
+Bootstrap Datepicker 
+Example: http://runnable.com/UmOlOZbXvZRqAABU/bootstrap-datepicker-example-text-input-with-specifying-date-format2
+Download: http://www.eyecon.ro/bootstrap-datepicker/
+
+Bootstrap Timepicker
+Example: http://jdewit.github.io/bootstrap-timepicker/
+>>>>>>> f28bf86b6678c05fbed5d2d64aec3cce03516572
+Download: http://jdewit.github.io/bootstrap-timepicker/

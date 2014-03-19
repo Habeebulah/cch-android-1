@@ -1,0 +1,127 @@
+<<<<<<< HEAD
+.dropme
+{
+ padding-top: 60px;
+}
+
+.whiteme
+{
+	color:white;
+}
+
+.redme
+{
+	color:red;
+}
+
+.bigsize
+{
+	font-size:2em;
+}
+
+.supersize
+{
+	font-size:3em;
+}
+.myblue
+{
+	background-color:lightgreen;
+}
+.eventtxt /*Used for event planning buttons (icons)*/
+{
+	font-size:1.5em;
+	font-weight:bold;
+	color:orange;
+}
+
+.question /* Used whenever a question is asked within the application */
+{
+	font-weight:bold;
+	font-size:1em; 
+	font-color:black;
+}
+
+.greyedout /* Used for text in elements that will be removed once the user enters a value*/
+{
+	color:grey;
+}
+
+.padme
+{
+	padding-top:5%;
+}
+
+.explain
+{
+	font-color:grey;
+	font-size:10px;
+}
+
+body
+{
+	
+}
+=======
+.dropme
+{
+ padding-top: 60px;
+}
+
+.whiteme
+{
+	color:white;
+}
+
+.redme
+{
+	color:red;
+}
+
+.bigsize
+{
+	font-size:2em;
+}
+
+.supersize
+{
+	font-size:3em;
+}
+.myblue
+{
+	background-color:lightgreen;
+}
+.eventtxt /*Used for event planning buttons (icons)*/
+{
+	font-size:1.5em;
+	font-weight:bold;
+	color:orange;
+}
+
+.question /* Used whenever a question is asked within the application */
+{
+	font-weight:bold;
+	font-size:1em; 
+	font-color:black;
+}
+
+.greyedout /* Used for text in elements that will be removed once the user enters a value*/
+{
+	color:grey;
+}
+
+.padme
+{
+	padding-top:5%;
+}
+
+.explain
+{
+	font-color:grey;
+	font-size:10px;
+}
+
+body
+{
+	
+}
+>>>>>>> f28bf86b6678c05fbed5d2d64aec3cce03516572

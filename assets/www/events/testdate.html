@@ -1,0 +1,254 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+
+    <title>CCH Android Application</title>
+	
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template 
+	nybasics - the main CSS file for non-bootstrap styling
+	-->
+    <link href="../css/nybasics.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="myblue">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://getbootstrap.com/examples/starter-template/#">My Care Hub</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="http://getbootstrap.com/examples/starter-template/#">Home</a></li>
+            <li><a href="http://getbootstrap.com/examples/starter-template/#about">About</a></li>
+            <li><a href="http://getbootstrap.com/examples/starter-template/#contact">Contact</a></li>
+          </ul>
+		  <ul class="nav navbar-nav navbar-right">
+            <li>Contact</li>
+           <li class="pull-right whiteme"><a><span class="glyphicon glyphicon-user whiteme"></span></a></li>
+ 			</ul>
+		 </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container dropme">
+	<div class="question">
+	What type of outreach would you like to schedule?
+	</div>
+	<select>
+		<option value="anc">Antenatal Care (ANC)</option>
+		<option value="pnc">Post-natal Care (PNC)</option>
+		<option value="schoolhealth">Child Welfare Clinics (CWC)</option>
+		<option value="cwc">Health Promotion Talks</option>
+	</select>
+	<br />
+	<br />
+	<div class="question">
+	When would you like to schedule this activity?
+	</div>
+	<br />
+	<span class="question" style="width:200px" onclick="">Start Date </span><input type="date" name="outreachstart">
+	<br /><br />
+	<span class="question" style="width:140px">Start Time </span> <input type="time" name="outreachstime">
+	<br /><br />
+	<span class="question" style="width:140px">End Date   </span><input type="date" name="outreachend">
+	<br />	<br />
+	<span class="question" style="width:140px">End Time   </span><input type="time" name="outreachetime">
+	<br /><br />
+	<div class="question">What additional information would you like to add about this event?</div>
+	<textarea rows="4" cols="50" class="greyedout"></textarea>
+	<br />
+	Start date<a href="#" class="btn small" id="dp4" data-date-format="yyyy-mm-dd" data-date="2012-02-20">Change</a>
+	<br />
+	End date<a href="#" class="btn small" id="dp5" data-date-format="yyyy-mm-dd" data-date="2012-02-25">Change</a>
+
+
+    </div><!-- /.container -->
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap-datepicker.js"></script>
+
+
+	<script src="text/javascript">
+			var startDate = new Date(2012,1,20);
+			var endDate = new Date(2012,1,25);
+			$('#dp4').datepicker()
+				.on('changeDate', function(ev){
+					if (ev.date.valueOf() > endDate.valueOf()){
+						$('#alert').show().find('strong').text('The start date can not be greater then the end date');
+					} else {
+						$('#alert').hide();
+						startDate = new Date(ev.date);
+						$('#startDate').text($('#dp4').data('date'));
+					}
+					$('#dp4').datepicker('hide');
+				});
+			$('#dp5').datepicker()
+				.on('changeDate', function(ev){
+					if (ev.date.valueOf() < startDate.valueOf()){
+						$('#alert').show().find('strong').text('The end date can not be less then the start date');
+					} else {
+						$('#alert').hide();
+						endDate = new Date(ev.date);
+						$('#endDate').text($('#dp5').data('date'));
+					}
+					$('#dp5').datepicker('hide');
+				});
+
+	</script>
+  
+
+=======
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+
+    <title>CCH Android Application</title>
+	
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template 
+	nybasics - the main CSS file for non-bootstrap styling
+	-->
+    <link href="../css/nybasics.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="myblue">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://getbootstrap.com/examples/starter-template/#">My Care Hub</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="http://getbootstrap.com/examples/starter-template/#">Home</a></li>
+            <li><a href="http://getbootstrap.com/examples/starter-template/#about">About</a></li>
+            <li><a href="http://getbootstrap.com/examples/starter-template/#contact">Contact</a></li>
+          </ul>
+		  <ul class="nav navbar-nav navbar-right">
+            <li>Contact</li>
+           <li class="pull-right whiteme"><a><span class="glyphicon glyphicon-user whiteme"></span></a></li>
+ 			</ul>
+		 </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container dropme">
+	<div class="question">
+	What type of outreach would you like to schedule?
+	</div>
+	<select>
+		<option value="anc">Antenatal Care (ANC)</option>
+		<option value="pnc">Post-natal Care (PNC)</option>
+		<option value="schoolhealth">Child Welfare Clinics (CWC)</option>
+		<option value="cwc">Health Promotion Talks</option>
+	</select>
+	<br />
+	<br />
+	<div class="question">
+	When would you like to schedule this activity?
+	</div>
+	<br />
+	<span class="question" style="width:200px" onclick="">Start Date </span><input type="date" name="outreachstart">
+	<br /><br />
+	<span class="question" style="width:140px">Start Time </span> <input type="time" name="outreachstime">
+	<br /><br />
+	<span class="question" style="width:140px">End Date   </span><input type="date" name="outreachend">
+	<br />	<br />
+	<span class="question" style="width:140px">End Time   </span><input type="time" name="outreachetime">
+	<br /><br />
+	<div class="question">What additional information would you like to add about this event?</div>
+	<textarea rows="4" cols="50" class="greyedout"></textarea>
+	<br />
+	Start date<a href="#" class="btn small" id="dp4" data-date-format="yyyy-mm-dd" data-date="2012-02-20">Change</a>
+	<br />
+	End date<a href="#" class="btn small" id="dp5" data-date-format="yyyy-mm-dd" data-date="2012-02-25">Change</a>
+
+
+    </div><!-- /.container -->
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap-datepicker.js"></script>
+
+
+	<script src="text/javascript">
+			var startDate = new Date(2012,1,20);
+			var endDate = new Date(2012,1,25);
+			$('#dp4').datepicker()
+				.on('changeDate', function(ev){
+					if (ev.date.valueOf() > endDate.valueOf()){
+						$('#alert').show().find('strong').text('The start date can not be greater then the end date');
+					} else {
+						$('#alert').hide();
+						startDate = new Date(ev.date);
+						$('#startDate').text($('#dp4').data('date'));
+					}
+					$('#dp4').datepicker('hide');
+				});
+			$('#dp5').datepicker()
+				.on('changeDate', function(ev){
+					if (ev.date.valueOf() < startDate.valueOf()){
+						$('#alert').show().find('strong').text('The end date can not be less then the start date');
+					} else {
+						$('#alert').hide();
+						endDate = new Date(ev.date);
+						$('#endDate').text($('#dp5').data('date'));
+					}
+					$('#dp5').datepicker('hide');
+				});
+
+	</script>
+  
+
+>>>>>>> f28bf86b6678c05fbed5d2d64aec3cce03516572
+</body></html>

@@ -1,0 +1,100 @@
+<<<<<<< HEAD
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>jQueryMobile - DateBox Option Tests</title>
+	<link href="../css/jquery.mobile.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" href="../css/jqm-datebox.min.css" rel="stylesheet" /> 
+	
+	<!-- NOTE: Script load order is significant! -->
+	
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script> 
+	<script src="../js/jquery.mobile.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.core.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.mode.datebox.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+	<script type="text/javascript">
+		jQuery.extend(jQuery.mobile.datebox.prototype.options, {
+			useModal: true,
+			useNewStyle: true,
+			usePlaceholder: true,
+			mode: 'timebox',
+			
+		});
+	</script>
+</head>
+<body>
+<div data-role="page" id="main"> 
+	<div data-role="content">
+	When would you like to schedule this activity?
+	<br />
+	<span class="question" style="width:200px" onclick="">Start Date </span><input type="text" id="outreachstart">
+	<br /><br />
+	Start Time:<input type="date" id="minHour" name="minHour" data-role="datebox" />				
+	<br /><br />
+	<br /><br />
+
+	<span class="question" style="width:140px">End Date   </span><input type="text" id="outreachend">
+	<br />	<br />
+	End Time:<input type="date" id="endoutreachtime" name="minHour" data-role="datebox" />				
+	<br /><br />
+	<div class="question">What additional information would you like to add about this event?</div>
+	<textarea rows="4" cols="50" class="greyedout"></textarea>		
+	</div>
+		
+	</div>
+</div>
+=======
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>jQueryMobile - DateBox Option Tests</title>
+	<link href="../css/jquery.mobile.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" href="../css/jqm-datebox.min.css" rel="stylesheet" /> 
+	
+	<!-- NOTE: Script load order is significant! -->
+	
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script> 
+	<script src="../js/jquery.mobile.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.core.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.mode.datebox.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+	<script type="text/javascript">
+		jQuery.extend(jQuery.mobile.datebox.prototype.options, {
+			useModal: true,
+			useNewStyle: true,
+			usePlaceholder: true,
+			mode: 'timebox',
+			
+		});
+	</script>
+</head>
+<body>
+<div data-role="page" id="main"> 
+	<div data-role="content">
+	When would you like to schedule this activity?
+	<br />
+	<span class="question" style="width:200px" onclick="">Start Date </span><input type="text" id="outreachstart">
+	<br /><br />
+	Start Time:<input type="date" id="minHour" name="minHour" data-role="datebox" />				
+	<br /><br />
+	<br /><br />
+
+	<span class="question" style="width:140px">End Date   </span><input type="text" id="outreachend">
+	<br />	<br />
+	End Time:<input type="date" id="endoutreachtime" name="minHour" data-role="datebox" />				
+	<br /><br />
+	<div class="question">What additional information would you like to add about this event?</div>
+	<textarea rows="4" cols="50" class="greyedout"></textarea>		
+	</div>
+		
+	</div>
+</div>
+>>>>>>> f28bf86b6678c05fbed5d2d64aec3cce03516572
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#EEB422">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/reset_qstn_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Please answer your question" />       
+
+        <EditText
+            android:id="@+id/reset_answer_field"           
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="text" 
+            android:background="#FFFFFF"
+            android:padding="5dp"/>  
+            
+      <RelativeLayout
+          	android:layout_width="fill_parent"
+       		android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:orientation="vertical"
+        	android:padding="10dp">          
+      </RelativeLayout>
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:onClick="onResetClick"
+            android:text="Done" 
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"/>
+
+       
+
+</LinearLayout>

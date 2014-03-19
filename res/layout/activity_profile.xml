@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="left"
+            android:orientation="vertical" >
+			
+            <TextView
+                android:id="@+id/profile_staffId_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_staffId_title" />
+            <TextView
+                android:id="@+id/profile_staffId_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                /> 
+            
+             <TextView
+                android:id="@+id/profile_first_name_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_first_name_title" />
+            <EditText
+                android:id="@+id/profile_first_name_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/> 
+            
+            <TextView
+                android:id="@+id/profile_lastname_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_lastname_title" />
+            <EditText
+                android:id="@+id/profile_lastname_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+            <TextView
+                android:id="@+id/profile_password_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_password_title" />
+            <EditText
+                android:id="@+id/profile_password_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+            
+            <TextView
+                android:id="@+id/profile_passwordagain_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_passwordagain_title" />
+            <EditText
+                android:id="@+id/profile_passwordagain_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+            
+         
+            
+            <TextView
+                android:id="@+id/profile_number_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_number_title" />
+            <EditText
+                android:id="@+id/profile_number_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+            
+            <TextView
+                android:id="@+id/profile_secreteQuestion_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_secreteQuestion_title" />
+            <Spinner
+                android:id="@+id/profile_secretQuestion_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:entries="@array/qstn_array"
+                android:prompt="@string/profile_secreteQuestion_title"/>
+            
+            
+            <TextView
+                android:id="@+id/profile_answer_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_answer_title" />
+            <EditText
+                android:id="@+id/profile_answer_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"                
+                android:inputType="text"/>
+            
+           
+
+            <TextView
+                android:id="@+id/profile_facilityid_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_facilityid_title"/>
+            <EditText
+                android:id="@+id/profile_facilityid_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/profile_type_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_type_title" />
+
+            <Spinner
+                android:id="@+id/profile_type_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/type_array"
+                android:inputType="text"
+                android:prompt="@string/profile_type_title" />
+
+            <TextView
+                android:id="@+id/profile_supervisor_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_supervisor_title"/>
+
+            <Spinner
+                android:id="@+id/profile_supervisor_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/supervisor_array"
+                android:inputType="text"
+                android:prompt="@string/profile_supervisor_title" />
+
+            
+            
+            
+
+            <Button
+                android:id="@+id/profile_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRegisterClick"
+                android:text="@string/profile_btn_text"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

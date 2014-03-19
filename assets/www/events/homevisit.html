@@ -1,0 +1,250 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+
+    <title>CCH Android Application</title>
+	
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/jquery.mobile.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" href="../css/jqm-datebox.min.css" rel="stylesheet" /> 
+
+    <!-- Custom styles for this template 
+	cchbasics - the main CSS file for non-bootstrap styling
+	-->
+    <link href="../css/cchbasics.css" rel="stylesheet">
+
+	<!-- NOTE: Script load order is significant! -->
+	
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script> 
+	<script src="../js/jquery.mobile.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.core.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.mode.datebox.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.mode.calbox.min.js"></script>
+	<script type="text/javascript">
+		jQuery.extend(jQuery.mobile.datebox.prototype.options, {
+			useModal: true,
+			useNewStyle: true,
+			usePlaceholder: true,
+			mode: 'timebox',
+			
+		});
+	</script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+      <div class="container dropme ">
+	<div data-role="content">
+	<div class="question">
+	What type of outreach would you like to schedule?
+	</div>
+	<select>
+		<option value="anc">Special Home Visit</option>
+		<option value="schoolhealth">Routine Home Visit</option><!--sub categories include Antenatal Care/Prenatal Care-->
+		<option value="schoolhealth">Family Planning</option><!--cross-category events-->
+	</select>
+	<br />
+	<div class="question">
+	When would you like to schedule this activity?
+	</div>
+	<br />
+	<span class="question" style="width:200px" onclick="">Start Date </span><input name="outreachstart" id="outreachstart" type="date" data-role="datebox" data-options='{"mode": "calbox"}'>
+
+	<br /><br />
+	Start Time<input type="date" id="minHour" name="minHour" data-role="datebox" />				
+	<br /><br />
+	<span class="question" style="width:200px" onclick="">End Date </span><input name="outreachend" id="outreachend" type="date" data-role="datebox" data-options='{"mode": "datebox"}'>
+
+	<br />	<br />
+	End Time:<input type="date" id="maxHour" name="maxHour" data-role="datebox" />				
+	<br /><br />
+
+	<div class="question">
+	What target is this activity linked to?
+	<select>
+		<option value="anc">None </option>
+		<option value="anc">Immunisations</option>
+		<option value="pnc">Home Visits</option>
+		<option value="schoolhealth">Professional Development</option>
+		<option value="schoolhealth">My Health</option>
+	</select>	</div>
+	<br />
+	<span class="question" style="width:200px" onclick="">Start Date </span><input name="outreachstart" id="outreachstart" type="date" data-role="datebox" data-options='{"mode": "calbox"}'>
+	<div class="question">What additional information would you like to add about this event?</div>
+	<textarea rows="4" cols="50" class="greyedout"></textarea>
+	</div>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script src="../js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+
+			$('#outreachstart').live('click', function() {
+				$('#outreachstart').datebox('open');
+				}); 
+				
+                $('#outreachstart').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+				
+				$('#outreachstime').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+				
+				$('#outreachend').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+
+				$('#outreachetime').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+            
+            });
+        </script>
+  
+
+=======
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+
+    <title>CCH Android Application</title>
+	
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/jquery.mobile.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" href="../css/jqm-datebox.min.css" rel="stylesheet" /> 
+
+    <!-- Custom styles for this template 
+	cchbasics - the main CSS file for non-bootstrap styling
+	-->
+    <link href="../css/cchbasics.css" rel="stylesheet">
+
+	<!-- NOTE: Script load order is significant! -->
+	
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script> 
+	<script src="../js/jquery.mobile.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.core.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.mode.datebox.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.mode.calbox.min.js"></script>
+	<script type="text/javascript">
+		jQuery.extend(jQuery.mobile.datebox.prototype.options, {
+			useModal: true,
+			useNewStyle: true,
+			usePlaceholder: true,
+			mode: 'timebox',
+			
+		});
+	</script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+      <div class="container dropme ">
+	<div data-role="content">
+	<div class="question">
+	What type of outreach would you like to schedule?
+	</div>
+	<select>
+		<option value="anc">Special Home Visit</option>
+		<option value="schoolhealth">Routine Home Visit</option><!--sub categories include Antenatal Care/Prenatal Care-->
+		<option value="schoolhealth">Family Planning</option><!--cross-category events-->
+	</select>
+	<br />
+	<div class="question">
+	When would you like to schedule this activity?
+	</div>
+	<br />
+	<span class="question" style="width:200px" onclick="">Start Date </span><input name="outreachstart" id="outreachstart" type="date" data-role="datebox" data-options='{"mode": "calbox"}'>
+
+	<br /><br />
+	Start Time<input type="date" id="minHour" name="minHour" data-role="datebox" />				
+	<br /><br />
+	<span class="question" style="width:200px" onclick="">End Date </span><input name="outreachend" id="outreachend" type="date" data-role="datebox" data-options='{"mode": "datebox"}'>
+
+	<br />	<br />
+	End Time:<input type="date" id="maxHour" name="maxHour" data-role="datebox" />				
+	<br /><br />
+
+	<div class="question">
+	What target is this activity linked to?
+	<select>
+		<option value="anc">None </option>
+		<option value="anc">Immunisations</option>
+		<option value="pnc">Home Visits</option>
+		<option value="schoolhealth">Professional Development</option>
+		<option value="schoolhealth">My Health</option>
+	</select>	</div>
+	<br />
+	<span class="question" style="width:200px" onclick="">Start Date </span><input name="outreachstart" id="outreachstart" type="date" data-role="datebox" data-options='{"mode": "calbox"}'>
+	<div class="question">What additional information would you like to add about this event?</div>
+	<textarea rows="4" cols="50" class="greyedout"></textarea>
+	</div>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script src="../js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+
+			$('#outreachstart').live('click', function() {
+				$('#outreachstart').datebox('open');
+				}); 
+				
+                $('#outreachstart').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+				
+				$('#outreachstime').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+				
+				$('#outreachend').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+
+				$('#outreachetime').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+            
+            });
+        </script>
+  
+
+>>>>>>> f28bf86b6678c05fbed5d2d64aec3cce03516572
+</body></html>

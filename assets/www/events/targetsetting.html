@@ -1,0 +1,266 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+
+    <title>CCH Android Application</title>
+	
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/jquery.mobile.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" href="../css/jqm-datebox.min.css" rel="stylesheet" /> 
+
+    <!-- Custom styles for this template 
+	cchbasics - the main CSS file for non-bootstrap styling
+	-->
+    <link href="../css/cchbasics.css" rel="stylesheet">
+
+	<!-- NOTE: Script load order is significant! -->
+	
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script> 
+	<script src="../js/jquery.mobile.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.core.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.mode.datebox.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.mode.calbox.min.js"></script>
+	<script type="text/javascript">
+		jQuery.extend(jQuery.mobile.datebox.prototype.options, {
+			useModal: true,
+			useNewStyle: true,
+			usePlaceholder: true,
+			mode: 'timebox',
+			
+		});
+	</script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+      <div class="container dropme ">
+	<div data-role="content">
+	<div class="question">
+	What type of target would you like to set?
+	</div>
+	<select>
+		<option value="anc">Daily</option>
+		<option value="pnc">Weekly</option>
+		<option value="schoolhealth">Monthly</option>
+	</select>
+	<br />
+	<div class="question">
+	Name Your Target
+	</div>
+	<input type="text" name="target"></input>
+	<div class="question">
+<br />
+	Select a unit for your target
+	</div>
+	<select>
+		<option value="anc">Men</option>
+		<option value="pnc">Women</option>
+		<option value="schoolhealth">Children</option>
+		<option value="schoolhealth">Individuals</option>
+		<option value="schoolhealth">Immunisations</option>
+		<option value="schoolhealth">Households</option>
+		<option value="schoolhealth">Visits</option>
+		<option value="schoolhealth">Outreach activities</option>		
+		<option value="schoolhealth">None</option>		
+	</select>
+
+	<div class="question">
+	<br />
+	What is the desired value of your target?
+	</div>
+	<input type="text" name="target"></input>
+
+	<br />
+	<div class="question">
+	Describe your target
+	</div>
+	<textarea name="targetdesc"></textarea>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script src="../js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+
+			$('#outreachstart').live('click', function() {
+				$('#outreachstart').datebox('open');
+				}); 
+				
+                $('#outreachstart').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+				
+				$('#outreachstime').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+				
+				$('#outreachend').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+
+				$('#outreachetime').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+            
+            });
+        </script>
+<div class="row">
+<div class="col-md-5">
+<h2><a href="../index.html" rel="external" data-transition="slide">Back</a></h2>
+</div>
+<div class="col-md-3">
+<div class="pull-right">
+<h2><a href="../index.html" rel="external" data-transition="flip">Save</a></h2>
+</div>
+</div>
+</div>
+ 
+=======
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+
+    <title>CCH Android Application</title>
+	
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/jquery.mobile.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" href="../css/jqm-datebox.min.css" rel="stylesheet" /> 
+
+    <!-- Custom styles for this template 
+	cchbasics - the main CSS file for non-bootstrap styling
+	-->
+    <link href="../css/cchbasics.css" rel="stylesheet">
+
+	<!-- NOTE: Script load order is significant! -->
+	
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script> 
+	<script src="../js/jquery.mobile.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.core.min.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.mode.datebox.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+	<script type="text/javascript" src="../js/jqm-datebox.mode.calbox.min.js"></script>
+	<script type="text/javascript">
+		jQuery.extend(jQuery.mobile.datebox.prototype.options, {
+			useModal: true,
+			useNewStyle: true,
+			usePlaceholder: true,
+			mode: 'timebox',
+			
+		});
+	</script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+      <div class="container dropme ">
+	<div data-role="content">
+	<div class="question">
+	What type of target would you like to set?
+	</div>
+	<select>
+		<option value="anc">Daily</option>
+		<option value="pnc">Weekly</option>
+		<option value="schoolhealth">Monthly</option>
+	</select>
+	<br />
+	<div class="question">
+	Name Your Target
+	</div>
+	<input type="text" name="target"></input>
+	<div class="question">
+<br />
+	Select a unit for your target
+	</div>
+	<select>
+		<option value="anc">Men</option>
+		<option value="pnc">Women</option>
+		<option value="schoolhealth">Children</option>
+		<option value="schoolhealth">Individuals</option>
+		<option value="schoolhealth">Immunisations</option>
+		<option value="schoolhealth">Households</option>
+		<option value="schoolhealth">Visits</option>
+		<option value="schoolhealth">Outreach activities</option>		
+		<option value="schoolhealth">None</option>		
+	</select>
+
+	<div class="question">
+	<br />
+	What is the desired value of your target?
+	</div>
+	<input type="text" name="target"></input>
+
+	<br />
+	<div class="question">
+	Describe your target
+	</div>
+	<textarea name="targetdesc"></textarea>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script src="../js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+
+			$('#outreachstart').live('click', function() {
+				$('#outreachstart').datebox('open');
+				}); 
+				
+                $('#outreachstart').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+				
+				$('#outreachstime').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+				
+				$('#outreachend').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+
+				$('#outreachetime').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+            
+            });
+        </script>
+<div class="row">
+<div class="col-md-5">
+<h2><a href="../index.html" rel="external" data-transition="slide">Back</a></h2>
+</div>
+<div class="col-md-3">
+<div class="pull-right">
+<h2><a href="../index.html" rel="external" data-transition="flip">Save</a></h2>
+</div>
+</div>
+</div>
+ 
+>>>>>>> f28bf86b6678c05fbed5d2d64aec3cce03516572
+</body></html>
